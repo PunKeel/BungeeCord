@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class ConnectionThrottle
 {
 
-    private final Cache<InetAddress, Long> throttle;
+    private final Cache<InetAddress, Boolean> throttle;
 
     public ConnectionThrottle(int throttleTime)
     {
